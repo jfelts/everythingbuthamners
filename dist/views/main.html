@@ -8,4 +8,4 @@
 </div>
 --><div class="jumbotron"><p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p></div><div class="row marketing"><code>awesomeThings.length: {{awesomeThings.length}}</code><style>.indent{
         margin-left: 10px;
-      }</style><p><dl id="item-list" ng-repeat="a in awesomeThings"><dt>{{a.name}}</dt><dd class="indent">Description:{{a.desc}}</dd></dl></p><div class="footer"><p>♥ from the coder</p></div></div>
+      }</style><p><dl id="item-list" ng-repeat="a in awesomeThings"><dt>{{a.name}}</dt><dd class="indent">Description:{{a.desc}}<br><addtocart id="{{ item.id }}" name="{{ item.name }}" price="{{ item.price }}" data="item">Add To Cart</addtocart></dd></dl></p><p><cart></cart></p><div class="footer"><p>♥ from the coder</p></div></div>

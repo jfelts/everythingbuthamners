@@ -24,11 +24,19 @@
   </style>
 
   <p>
-    <dl id="item-list" ng-repeat='a in awesomeThings' >
-      <dt>{{a.name}}</dt>
-      <dd class="indent">Description:{{a.desc}}</dd>
+    <dl id="item-list" ng-repeat='item in awesomeThings' >
+      <dt>{{item.name}}</dt>
+      <dd class="indent">
+        Description:{{item.desc}}<br/>
+        <addtocart id="{{ item.id }}" name="{{ item.name }}" price="{{ item.price }}" data="item">Add To Cart</addtocart>
+      </dd>
     </dl>
   </p>
+
+  <p>
+    <cart></cart>
+  </p>
+
 
 <div class="footer">
   <p>♥ from the coder</p>
